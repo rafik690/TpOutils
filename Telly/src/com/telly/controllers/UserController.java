@@ -21,12 +21,6 @@ import com.telly.service.UserService;
 @Controller
 public class UserController {
 
-	@Autowired
-	UserService userService;
-	
-	@Autowired
-	ReserveService reserveService;
-
 	@RequestMapping("/login")
 	public String showLogin() {
 		return "login";
