@@ -20,6 +20,11 @@
 
 @Controller
 public class UserController {
+	@Autowired
+	UserService userService;
+	
+	@Autowired
+	ReserveService reserveService;
 	@RequestMapping("/createaccount")
 	public String createAccount(Model model, Principal principal) {
 		
