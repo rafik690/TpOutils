@@ -18,6 +18,7 @@ import com.telly.service.ReserveService;
 import com.telly.service.UserService;
 
 
+<<<<<<< HEAD
 
 @Controller
 public class UserController {
@@ -84,3 +85,19 @@ public class UserController {
 	}
     
 }
+=======
+@Controller
+public class UserController {
+
+	@RequestMapping("/login")
+	public String showLogin() {
+		return "login";
+	}
+	
+	@RequestMapping("/loggedout")
+	public String showLogout() {
+		return "loggedout";
+	}
+
+}
+>>>>>>> Security
